@@ -134,43 +134,53 @@
 
           </div>
           <div class="container col-md-6">
-            <form class="border border-light p-5" style="background-color: white;">
+            <form class="border border-light p-5 md" style="background-color: white;">
               <div class="card">
                 <img src="img/BAI Header (with ISO).jpg" alt="">
               </div>
               <br><br>
               <p class="h4 mb-4 text-center">Sign up</p>
-              <div class="md-form">
-                <input type="text" id="textInput1" class="form-control mb-4" name="Architect_name">
-                <label for="textInput1">Name of Applicant * </label>
+              <div class="form-row">
+                <div class="col-6">
+                  <div class="md-form mb-0">
+                    <input type="text" id="textInput1" class="form-control" name="username" required>
+                    <label for="textInput1">First Name* </label>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="md-form mb-0">
+                      <input type="text" id="textInput2" class="form-control" name="" required>
+                      <label for="textInput2">Last Name* </label>
+                  </div>
+                </div>
               </div>
               <div class="md-form">
-                <input type="text" id="textInput2" class="form-control mb-4" name="Architect_name">
-                <label for="textInput2">Designation of Applicant * </label>
+                <input type="text" id="textInput3" class="form-control mt-0 mb-4" name="applicant_desig">
+                <label for="textInput3">Designation of Applicant * </label>
               </div>
               <div class="md-form">
-                <input type="text" id="textInput3" class="form-control mb-4" name="Architect_name">
-                <label for="textInput3">Name of Firm / Company * </label>
+                <input type="text" id="textInput4" class="form-control mb-4" name="company_nm">
+                <label for="textInput4">Name of Firm / Company * </label>
               </div>
               <div class="md-form">
                 <label for="textarea">Full Address *</label>
-                <textarea id="textarea" class="form-control mb-4 md-textarea" placeholder=""></textarea>
+                <textarea id="textarea" class="form-control mb-4 md-textarea" name="address" placeholder=""></textarea>
               </div>
 
               <label for="textarea">Membership/s of construction related associations <br> (other than BAI)</label>
-              <textarea id="textarea" class="form-control mb-4 md-textarea" placeholder="Mention in points"></textarea>
+              <textarea id="textarea" class="form-control mb-4 md-textarea" name="other_membership" placeholder="Mention in points"></textarea>
 
               <div class="md-form">
-                <input type="text" id="textInput4" class="form-control mb-4" name="Architect_name">
-                <label for="textInput4">Phone number</label>
+                <input type="text" id="textInput5" class="form-control mb-4" name="ph_no">
+                <label for="textInput5">Phone number</label>
               </div>
               <div class="md-form">
-                <input type="text" id="textInput4" class="form-control mb-4" name="Architect_name">
-                <label for="textInput4">Email</label>
+                <input type="text" id="textInput6" class="form-control mb-4" name="email">
+                <label for="textInput6">Email</label>
               </div>
               <div class="md-form">
-                <input type="text" id="textInput4" class="form-control mb-4" name="Architect_name">
-                <label for="textInput4">Password</label>
+                <input type="text" id="textInput7" class="form-control mb-4" name="password">
+                <label for="textInput7">Password</label>
               </div>
               <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">Minimal 8 characters
                 lenght</small>
@@ -178,7 +188,7 @@
 
               <!-- <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">Optional - for two step authentication</small> -->
 
-              <button class="btn btn-info my-4 btn-block" type="submit">Sign up</button>
+              <button class="btn btn-info my-4 btn-block" onclick="window.location.href='login.html'" type="submit">Sign up</button>
 
               <div class="text-center">
                 <p>Already a member?
